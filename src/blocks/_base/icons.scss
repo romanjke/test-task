@@ -1,0 +1,23 @@
+.icon {
+    display: inline-block;
+
+    &--phone {
+        @include sprite($phone);
+    }
+
+    &--location {
+        @include sprite($location);
+    }
+
+    &--search {
+        @include sprite($search);
+    }
+
+    &--email {
+        @include sprite($email);
+    }
+
+    &--lang {
+        @include sprite($lang);
+    }
+}

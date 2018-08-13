@@ -36,6 +36,6 @@
   },
   "dependencies": {
     "gulp-rename": "^1.4.0",
-    "normalize.scss": "^0.1.0",
+    "normalize.scss": "^0.1.0"
   }
 }

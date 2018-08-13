@@ -1,0 +1,72 @@
+.header {
+    background-color: $main-color;
+    color: #FFF;
+
+    &__wrapper {
+        display: flex;
+        /*justify-content: space-between;*/
+    }
+
+    &__item {
+        padding: 26px 0 23px;
+        border-right: 1px solid #d83c3c;
+    }
+
+    &__logo {
+        margin-right: 60px;
+        border: 0;
+    }
+
+    &__hotline {
+        display: inline-block;
+        color: #FFF;
+        padding-right: 171px;
+    }
+
+    &__icon {
+        margin-right: 10px;
+        vertical-align: middle;
+    }
+
+    &__phone {
+        margin-right: 16px;
+        font-size: 1.125rem;
+        font-family: $main-font;
+        font-weight: 700;
+        text-decoration: none;
+        color: #FFF;
+    }
+
+    &__hotline-text {
+        font-size: 0.875rem;
+        font-family: $main-font;
+        font-weight: 400;
+        /*vertical-align: bottom;*/
+    }
+
+    &__location {
+        display: inline-block;
+        padding-left: 39px;
+        padding-right: 54px;
+        font-size: 0.875rem;
+    }
+
+    &__location-text {
+        text-decoration: none;
+        color: #FFF;
+        border-bottom: 1px dotted #fff;
+    }
+
+    &__search {
+        padding-left: 41px;
+        padding-right: 38px;
+    }
+
+    &__email {
+        padding: 29px 40px 23px 41px;
+    }
+
+    &__lang {
+        padding: 29px 37px 23px 39px;
+    }
+}

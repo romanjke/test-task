@@ -1,0 +1,28 @@
+mixin header()
+    header.header
+        .container
+            .header__wrapper
+                a(href="#").header__item.header__logo
+                    img(src="../img/logo.png" alt="Ваша компания")
+
+                .header__item.header__hotline
+                    i.header__icon.icon.icon--phone
+                    a(href="tel:+8-800-200-90-02").header__phone 8-800-200-90-02
+                    span.header__hotline-text горячая линия
+
+                .header__item.header__location
+                        i.header__icon.icon.icon--location
+                        a(href="#").header__location-text п. Ильинское-Хованское
+
+                .header__item.header__search
+                    a(href="#")
+                        i.icon.icon--search
+
+                .header__item.header__email
+                    a(href="mailto:yourcompany@mail.ru")
+                        i.icon.icon--email
+
+                .header__item.header__lang
+                    a(href="#")
+                        i.icon.icon--lang
+

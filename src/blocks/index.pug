@@ -1,4 +1,5 @@
 include head/head
+include header/header
 
 doctype html
 html(lang="ru")
@@ -10,3 +11,7 @@ html(lang="ru")
                 "author": "Roman",
                 "description": "Тестовое задание от CADesign"
             })
+
+    BODY
+        block header
+            +header()

@@ -89,6 +89,7 @@ gulp.task('watch', function() {
 	gulp.watch(paths.blocks + '**/*.js', gulp.series('scripts'));
 	gulp.watch(paths.img, gulp.series('imgBuild'));
 	gulp.watch(paths.fonts, gulp.series('fontsBuild'));
+	gulp.watch(paths.icons, gulp.series('sprite'));
 	gulp.watch(paths.vendor + 'css/*.css', gulp.series('vendor:css'));
 	gulp.watch(paths.vendor + 'js/*.js', gulp.series('vendor:js'));
 });
@@ -137,6 +138,7 @@ gulp.task('fontsBuild', function() {
 
 //default
 gulp.task('default', gulp.series(
+		'sprite',
 		gulp.parallel('pug', 'sass', 'scripts', 'imgBuild', 'fontsBuild', 'vendor:css', 'vendor:js'),
 		gulp.parallel('browser-sync', 'watch')
 	)
@@ -144,7 +146,7 @@ gulp.task('default', gulp.series(
 
 //production
 gulp.task('prod', gulp.series(
-		'clean',
+		'clean', 'sprite',
 		gulp.parallel('pug', 'sass', 'scripts', 'imgBuild', 'fontsBuild', 'vendor:css', 'vendor:js'),
 		'useref'
 	)
