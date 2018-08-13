@@ -1,0 +1,13 @@
+mixin head(data)
+    title= data.title
+    meta(charset="utf-8")
+
+    meta(content=data.author name="author")
+    meta(content=data.description name="description")
+
+    meta(http-equiv='X-UA-Compatible', content="IE=edge")
+    meta(name='viewport' content='width=device-width')
+
+    // build:css css/main.css
+    link(rel="stylesheet", href="css/main.css")
+    // endbuild
