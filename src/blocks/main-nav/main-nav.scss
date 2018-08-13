@@ -1,0 +1,41 @@
+.main-nav {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        height: 70px;
+        display: flex;
+    }
+
+    &__item {
+        padding: 0 30px;
+
+        &:hover {
+            border-bottom: 3px solid $main-color;
+        }
+
+        &:first-child {
+            padding-left: 0;
+        }
+    }
+
+    &__link {
+        display: block;
+        cursor: pointer;
+        text-decoration: none;
+        color: #4d4d4d;
+        height: 100%;
+        line-height: 70px;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    &__icon {
+        margin-right: 12px;
+    }
+}

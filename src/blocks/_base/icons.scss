@@ -20,4 +20,32 @@
     &--lang {
         @include sprite($lang);
     }
+
+    &--cup {
+        @include sprite($cup);
+    }
+
+    &--cart {
+        @include sprite($cart);
+    }
+
+    &--work {
+        @include sprite($work);
+    }
+
+    &--portfolio {
+        @include sprite($portfolio);
+    }
+
+    &--diagram {
+        @include sprite($diagram);
+    }
+
+    &--plane {
+        @include sprite($plane);
+    }
+
+    &--valign--mid {
+        vertical-align: middle;
+    }
 }

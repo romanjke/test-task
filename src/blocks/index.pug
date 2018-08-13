@@ -1,5 +1,6 @@
 include head/head
 include header/header
+include main-nav/main-nav
 
 doctype html
 html(lang="ru")
@@ -15,3 +16,5 @@ html(lang="ru")
     BODY
         block header
             +header()
+        block main-nav
+            +main-nav()
